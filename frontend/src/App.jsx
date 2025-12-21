@@ -1,11 +1,16 @@
 import Hello from './components/Hello';
 
 function App() {
+  var dude = {
+    greetedBy: "howdy",
+    name: "Gaiu",
+    emoji: "🦅",
+    seatNumbers: [7,9,1]
+  };
+ 
   return (
     <div className="app">
-      <Hello  greet="suupppp" name="Jules" />
-      <Hello  greet="hey" name="Hugo" />
-      <Hello  greet="nicee to meetcha" name="Nick" />
+      <Hello dude={dude}/>
     </div>
   )
 }

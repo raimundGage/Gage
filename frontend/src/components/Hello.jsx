@@ -1,7 +1,9 @@
-function Hello(strike) {
+const Hello = ({dude}) => {
     return (
         <section>
-            <h1>{strike.greet}, {strike.name}!</h1>
+            <h1>
+                {dude.greetedBy}, {dude.name} {dude.emoji}! ur seat numbers are {dude.seatNumbers} ^^
+            </h1>
         </section>
     );
 };
