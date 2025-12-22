@@ -1,15 +1,15 @@
 export default function Fruits() {
     const fruits = [
-        "Apple", "Banana", "Coconut", "Guava", "Strawberry", "Watermelon"
+        "Grapes", "Pomegranate", "Raspberry", "Pear", "Cherry", "Figs"
     ];
-    
-    return (
-        <div>
-            <ul>
-                {fruits.map((es) => (
-                    <li>{es}</li>
+
+    return(
+        <section>
+            <ol className="list-decimal list-inside">
+                {fruits.map((frt) => (
+                    <li key={frt}>{frt}</li>
                 ))}
-            </ul>
-        </div>
+            </ol>
+        </section>
     );
 };
