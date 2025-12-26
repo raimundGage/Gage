@@ -1,37 +1,33 @@
-import { PvZPlants } from './PvZPlants';
+import { Plant } from './Plant';
 
 export const Plants = () => {
-    const Plants = [
+    let myPlants = [
         {
-            name: "Jack O' Lantern",
-            sunCost : 225,
-            damage : 300,
+            name: "Primal Peashooter",
+            cost: 175,
+            mintFamilyEmoji: '🔫'
         },
         {
-            name: "Guacodile",
-            sunCost : 125,
-            damage : 20,
+            name: "Parsnip",
+            cost: 125,
+            mintFamilyEmoji: '👊'
         },
         {
-            name: "Bud'uh Boom",
-            sunCost : 100,
-            damage : 1000,
-        }
+            name: "Hurrikale",
+            cost: 100,
+            mintFamilyEmoji: '❄️'
+        },
     ];
 
     return (
         <section>
-            <article>
-                <ol className="list-decimal list-inside">
-                    {Plants.map((plant) => {
-                        return <PvZPlants
-                        key={plant.name}
-                        name={plant.name}
-                        sunCost={plant.sunCost}
-                        damage={plant.damage} />;
-                    })}
-                </ol>
-            </article>
+            <ol className='list-decimal list-inside'>
+                {myPlants.map((myPlant) => {
+                    return (
+                        <Plant key={myPlant.name} name={myPlant.name} cost={myPlant.cost} mintFamilyEmoji={myPlant.mintFamilyEmoji}/>
+                    );
+                })}
+            </ol>
         </section>
     );
 };
