@@ -41,7 +41,11 @@ function App() {
 
       {/* Practicing To Replicate The Old Window */}
       <div className="mt-3">
-        <Window title={"Who Am I?"} content={"I'm Raimund Gage!"} />
+        <Window
+          title={"grantly_<3_<3"}
+          content={"I'm Raimund Gage!"}
+          grantlyIMG={"https://safebooru.org//samples/526/sample_4cb885ea2fd808a9ea3ad81bb44aa13da4c9a9f8.jpg"}
+        />
       </div>
     </article>
   );

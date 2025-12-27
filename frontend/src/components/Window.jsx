@@ -1,28 +1,27 @@
-export const Window = ({ title, content }) => {
+export const Window = ({ title, content, grantlyIMG }) => {
   return (
     <section>
       <div
-        className="bg-win-grey p-1 max-w-2xl border-2 shadow-[1px_1px_0_0_#000000]
-                            border-l-win-light border-t-win-light border-r-win-dark border-b-win-dark"
+        className="bg-win-grey max-w-2xl border-2 p-1
+                   border-l-win-light border-t-win-light border-r-win-dark border-b-win-dark
+                     shadow-[1px_1px_0_0_#000000]"
       >
+
         {/* Title */}
         <div className="bg-win-blue px-2 py-1 mb-2 flex justify-between items-center">
-          <span className="text-white">{title}</span>
+          <span className="text-white text-sm font-bold tracking-wide">{title}</span>
           <div className="flex gap-1">
-            <button className="px-1 text-xs leading-none font-bold bg-win-grey border border-l-white border-t-white border-r-black border-b-black">
-              ?
-            </button>
-            <button className="px-1 text-xs leading-none font-bold bg-win-grey border border-l-white border-t-white border-r-black border-b-black">
-              -
-            </button>
-            <button className="px-1 text-xs leading-none font-bold bg-win-grey border border-l-white border-t-white border-r-black border-b-black">
-              X
-            </button>
+            <button className="bg-win-grey text-xs font-bold leading-none px-1 border border-l-white border-t-white border-r-black border-b-black">?</button>
+            <button className="bg-win-grey text-xs font-bold leading-none px-1 border border-l-white border-t-white border-r-black border-b-black">-</button>
+            <button className="bg-win-grey text-xs font-bold leading-none px-1 border border-l-white border-t-white border-r-black border-b-black">X</button>
           </div>
         </div>
 
-        {/* Content */}
-        <div className="bg-win-light">{content}</div>
+        {/* Main Content */}
+        <div className="bg-white border-2 border-win-dark p-4 font-serif">
+          <img src={grantlyIMG} />
+        </div>
+
       </div>
     </section>
   );
