@@ -14,8 +14,8 @@
 }
 
 @keyframes marquee {
-  0%   {transform: translateX(425%)}
-  100% {transform: translateX(-110%)}
+  from {transform: translateX( 100cqw)}
+  to   {transform: translateX(-100% )}
 }
 
 .animate-marquee {
