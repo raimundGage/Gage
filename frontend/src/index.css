@@ -14,11 +14,11 @@
 }
 
 @keyframes marquee {
-  0%   {transform: translateX(1250%)}
+  0%   {transform: translateX(425%)}
   100% {transform: translateX(-110%)}
 }
 
 .animate-marquee {
   display: inline-block;
-  animation: marquee 15s linear infinite;
+  animation: marquee 5s linear infinite;
 }
