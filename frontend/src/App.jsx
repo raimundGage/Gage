@@ -1,4 +1,3 @@
-import { Button } from "./pieces/Button";
 import { Marquee } from "./pieces/Marquee";
 import { Window } from "./components/Window";
 
@@ -25,9 +24,6 @@ function App() {
             );
           })}
         </div>
-
-        {/* Button */}
-        <Button buttonText={"mrowwww"} />
       </section>
 
       {/* Load The Image Inside The Window Component */}
