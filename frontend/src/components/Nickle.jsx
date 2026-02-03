@@ -1,7 +1,7 @@
-export const Nickle = () => {
+export const Nickle = ({ name, age }) => {
     return(
         <>
-            Hello! I'm Nickle.
+            Hello! My name's {name}. I'm {age} of age.
         </>
     );
 };

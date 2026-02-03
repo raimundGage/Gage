@@ -7,7 +7,7 @@ function App() {
     <section className="App">
       <ChomperSay />
       <Plants />
-      <Nickle />
+      <Nickle name="Nickle" age="27"/>
     </section>
   );
 }
